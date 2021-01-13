@@ -20,6 +20,11 @@
     "destroy": "npx projen destroy",
     "diff": "npx projen diff"
   },
+  "author": {
+    "name": "Neil Kuan",
+    "email": "guan840912@gmail.com",
+    "organization": false
+  },
   "devDependencies": {
     "@types/jest": "^26.0.20",
     "@types/node": "^10.17.0",

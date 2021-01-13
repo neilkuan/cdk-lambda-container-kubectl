@@ -3,6 +3,8 @@ const { AwsCdkTypeScriptApp } = require('projen');
 const project = new AwsCdkTypeScriptApp({
   cdkVersion: '1.83.0',
   name: 'lambda-container-kubectl',
+  authorName: 'Neil Kuan',
+  authorEmail: 'guan840912@gmail.com',
   cdkDependencies: [
     '@aws-cdk/aws-lambda',
     '@aws-cdk/aws-ecr',
@@ -14,7 +16,7 @@ const project = new AwsCdkTypeScriptApp({
   dependabot: false,
 });
 
-const common_exclude = ['cdk.out', 'cdk.context.json', 'image', 'yarn-error.log', 'coverage', 'venv'];
+const common_exclude = ['cdk.out', 'cdk.context.json', 'yarn-error.log', 'coverage', 'venv'];
 project.gitignore.exclude(...common_exclude);
 
 project.synth();

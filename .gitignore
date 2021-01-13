@@ -21,7 +21,6 @@ cdk.context.json
 cdk.out
 cdk.out/
 coverage
-image
 jspm_packages/
 junit.xml
 lerna-debug.log*
