@@ -6,6 +6,7 @@
 *.seed
 *.tgz
 *.tsbuildinfo
+.DS_Store
 .cache
 .cdk.staging/
 .eslintcache
@@ -37,7 +38,6 @@ yarn-error.log*
 !/.eslintrc.json
 !/.github/pull_request_template.md
 !/.github/workflows/build.yml
-!/.github/workflows/rebuild-bot.yml
 !/.mergify.yml
 !/.npmignore
 !/.projen/deps.json
@@ -49,6 +49,7 @@ yarn-error.log*
 !/package.json
 !/src
 !/test
+!/tsconfig.eslint.json
 !/tsconfig.jest.json
 !/tsconfig.json
 !version.json

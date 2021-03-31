@@ -14,9 +14,10 @@ const project = new AwsCdkTypeScriptApp({
     '@aws-cdk/aws-logs',
   ],
   dependabot: false,
+  defaultReleaseBranch: 'main',
 });
 
-const common_exclude = ['cdk.out', 'cdk.context.json', 'yarn-error.log', 'coverage', 'venv'];
+const common_exclude = ['cdk.out', 'cdk.context.json', 'yarn-error.log', 'coverage', 'venv', '.DS_Store'];
 project.gitignore.exclude(...common_exclude);
 
 project.synth();
